@@ -39,8 +39,5 @@ csv.each do |row|
 	puts "insert_query : #{insert_query}"
 	puts "inserting question no: #{qn_number} : #{text} for quiz_questionnaire no #{questionnaire_id}"
 	client.query(insert_query)
-
-	#client.query("INSERT INTO quiz_questions(uid,qn_no,questionnaire_id,category,text,notes,difficulty)VALUES('#{uid}',#{qn_number},#{questionnaire_id},'#{category}','#{text}','#{notes}','#{difficulty}'")
-	#client.query("INSERT INTO quiz_questions(uid,qn_no,questionnaire_id,category,text,notes,difficulty) VALUES
 end
 csv.close
